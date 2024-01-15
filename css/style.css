@@ -6,11 +6,11 @@
 }
 body{
     direction: rtl;
-    background-color: rgb(224, 224, 224);
-    background-image: url(../assets/background2.jpg);
+    background-color: #C5FFF8;
+    /* background-image: url(../assets/background2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 main{
     max-width: 1000px;
