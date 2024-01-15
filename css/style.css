@@ -28,3 +28,28 @@ header img{
 header h1{
     font-weight: 400;
 }
+.categorie{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 700px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+}
+.categorie ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 30px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+.categorie hr{
+    width: 1px;
+    height: 38px;
+    background-color: black;
+    border: none;
+}
