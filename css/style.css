@@ -52,18 +52,41 @@ header h1{
     height: 38px;
     border: none;
 }
+.box{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
 .products{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(230, 0, 0);
     width: 250px;
     height: 350px;
     border-radius: 10px;
     border: 1px solid gray;
-    display: flex;
-    flex-direction: column;
-    
+    padding: 10px 25px;
 }
 .img-products{
+    margin: 0 auto;
     background-image: url(../assets/back.jpg);
-    width: 200px;
-    height: 150px;
+    width: 100%;
+    height: 70%;
     background-size: cover;
+    border-radius: 3px;
 }
+.products h1{
+    font-size: 30px;
+    color: white;
+}
+.btns{
+    font-size: 25px;
+    color: blue;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
