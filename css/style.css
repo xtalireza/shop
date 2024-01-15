@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    direction: rtl;
+    background-color: rgb(224, 224, 224);
+    background-image: url(../assets/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+header img{
+    width: 40px;
+}
+header h1{
+    font-weight: 400;
+}
