@@ -51,6 +51,7 @@ header h1{
     width: 1px;
     height: 38px;
     border: none;
+    background-color: black;
 }
 .box{
     margin-top: 20px;
@@ -62,7 +63,6 @@ header h1{
 .products{
     display: flex;
     flex-direction: column;
-    background-color: rgb(230, 0, 0);
     width: 250px;
     height: 350px;
     border-radius: 10px;
@@ -79,7 +79,7 @@ header h1{
 }
 .products h1{
     font-size: 30px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .btns{
     font-size: 25px;
@@ -89,4 +89,16 @@ header h1{
     justify-content: space-between;
 
 }
-
+.btns button{
+    width:70px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    transition: 0.5s all linear;
+}
+.btns button:hover{
+    background-color: transparent;
+    color: black;
+}
