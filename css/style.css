@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+:root{
+    font-family: 'Vazirmatn', sans-serif;
+}
 body{
     direction: rtl;
     background-color: #C5FFF8;
@@ -11,6 +14,7 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed; */
+    font-family: 'Vazirmatn', sans-serif;
 }
 main{
     max-width: 1000px;
@@ -21,12 +25,14 @@ header{
     align-items: center;
     gap: 10px;
     margin-top: 10px;
+    font-family: 'Vazirmatn', sans-serif;
 }
 header img{
     width: 40px;
 }
 header h1{
     font-weight: 400;
+    font-family: 'Vazirmatn', sans-serif;
 }
 .categorie{
     margin: 0 auto;
@@ -36,7 +42,11 @@ header h1{
     border-bottom: 2px solid rgb(0, 0, 0);
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
+    font-family: 'Vazirmatn', sans-serif;
 
+}
+.categorie li{
+    font-family: 'Vazirmatn', sans-serif;
 }
 .categorie ul{
     display: flex;
@@ -46,6 +56,7 @@ header h1{
     gap: 30px;
     font-size: 30px;
     color: rgb(0, 0, 0);
+    font-family: 'Vazirmatn', sans-serif;
 }
 .categorie hr{
     width: 1px;
@@ -54,11 +65,12 @@ header h1{
     background-color: black;
 }
 .box{
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+    font-family: 'Vazirmatn', sans-serif;
 }
 .products{
     display: flex;
@@ -66,8 +78,9 @@ header h1{
     width: 250px;
     height: 350px;
     border-radius: 10px;
-    border: 1px solid gray;
+    border: 2px solid rgb(100, 100, 100);
     padding: 10px 25px;
+    font-family: 'Vazirmatn', sans-serif;
 }
 .img-products{
     margin: 0 auto;
@@ -80,25 +93,31 @@ header h1{
 .products h1{
     font-size: 30px;
     color: rgb(0, 0, 0);
+    font-family: 'Vazirmatn', sans-serif;
 }
 .btns{
     font-size: 25px;
     color: blue;
     margin-top: 10px;
     display: flex;
+    font-family: 'Vazirmatn', sans-serif;
     justify-content: space-between;
-
+}
+.btns span{
+    font-family: 'Vazirmatn', sans-serif; 
 }
 .btns button{
     width:70px;
     height: 35px;
     border-radius: 5px;
+    font-size: 20px;
     border: 1px solid red;
     background-color: red;
     color: white;
     transition: 0.5s all linear;
+    font-family: 'Vazirmatn', sans-serif;
 }
 .btns button:hover{
     background-color: transparent;
-    color: black;
+    color: rgb(255, 0, 0);
 }
