@@ -69,7 +69,7 @@ header h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 60px;
     font-family: 'Vazirmatn', sans-serif;
 }
 .products{
