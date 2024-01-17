@@ -8,6 +8,9 @@
     font-family: 'Vazirmatn', sans-serif;
 }
 body{
+    background-image: url(../assets/wp9649930\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     direction: rtl;
     background-color: #ffffff;
     /* background-image: url(../assets/background2.jpg);
@@ -138,7 +141,7 @@ header h1{
 .buyform h1{
     font-size: 35px;
     font-family: 'Vazirmatn', sans-serif;
-    color: rgba(64, 64, 64, 0.452);
+    color: rgb(56, 56, 56);
 }
 .buyp{
     display: flex;
@@ -148,7 +151,7 @@ header h1{
     gap: 10px;
 }
 .buyp h1{
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .buyc{
     display: flex;
