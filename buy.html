@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="purchase, form, harsh kapadia, html, css, js, vanilla css">
+        <meta name="description" content="A purchase form by Harsh Kapadia">
+        <meta name="author" content="Harsh Kapadia">
+
+        <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="base.css">
+		<link rel="stylesheet" href="main.css">
+		<script defer src="./static/js/validation.js"></script>
+        
+        <title>خرید</title>
+    </head>
+
+    <body dir="rtl">
+        <main>
+			<div class="title">سبد خرید</div>
+			
+			<div id="error"></div>
+
+            <form action="" method="" class="form">
+				<fieldset>
+					<legend>&nbsp;اطلاعات خود را وارد نمایید&nbsp;</legend>
+
+					<div class="input-group">
+						<input type="text" name="customer-name" id="customer-name" placeholder="Full name" autofocus>
+						<label for="first-name">نام<sup></sup></label>
+					</div>
+
+					<div class="input-group">
+						<input type="email" name="e-mail" id="e-mail" placeholder="e-mail">
+						<label for="e-mail">نام خانوادگی<sup></sup></label>
+					</div>
+				</fieldset>
+				
+				<fieldset>
+					<legend style="color: rgb(40, 169, 17);">&nbsp;محل زندگی&nbsp;</legend>
+
+					<div class="input-group">
+						<input type="number" name="item-name" id="item-name" placeholder="Item name">
+						<label for="first-name">کد پستی<sup></sup></label>
+					</div>
+					
+					<div class="input-group">
+						<input type="number" name="qty" id="qty" placeholder="Quantity in Grams">
+						<label for="qty">استان<sup></sup></label>
+					</div>
+
+					<div class="textarea-group">
+						<textarea name="message" id="message" rows="5" placeholder="Message"></textarea>
+						<label>آدرس</label>
+					</div>
+				</fieldset>
+				<div class="button-div">
+					<button type="submit">خرید</button>
+				</div>
+            </form>
+        </main>
+    </body>
+</html>

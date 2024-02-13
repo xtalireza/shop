@@ -1,0 +1,299 @@
+/* ------------------ CSS Variables ------------------ */
+:root {
+    --main-bottom-margin: 120px;
+    --main-top-offset: -500px;
+
+    --bg-color-red: 190;
+    --bg-color-green: 131;
+    --bg-color-blue: 30;
+    
+    --img-border-color: rgba(60, 60, 60, 1.0);
+    --img-border-size: 5px;
+
+    --main-bg-color: rgba(220, 220, 220, 0.90);
+    --white-text-color: #e6e6e6;
+}
+
+/* Make every element have 0 margin and padding as well as border-box sizing for ease of sizing elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Adjust base font and html element height */
+html {
+    font-size: 22px;
+    color: #1e1e1e;
+    font-family: sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, 'Trebuchet MS';
+
+    height: 100%;
+}
+
+/* Adjust body element size and add an orange background */
+body {
+    font-family: B koodak;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(assets/IMG_20240129_212148_108.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    direction: rtl;
+}
+
+/* Make paragraphs slightly more bold and add more vertical spacing between text */
+p {
+    font-weight: 500;
+    text-indent: 1rem;
+    line-height: 130%;
+}
+li {
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 8px;
+}
+ul {
+    list-style-position: inside;
+}
+/* Add orange color to links */
+a {
+    color: orange;
+}
+/* Make links darker when they are hovered */
+a:hover {
+    color: #9e6d19;
+    transition: 0.25s;
+}
+
+header {
+    width: 100%;
+    height: 742px; /* Height of background image */
+
+    position: relative;
+    
+    /* Add a slightly dark overlay onto the background image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/header-banner.jpeg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Gradually transition the header's background image to the background color of the webpage */
+#header-fadeout {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+
+    top: 100%;
+    left: 0;
+    /* Leave 1% of the element down so there isn't a line visible across the background */
+    transform: translateY(-99%);
+
+    background: linear-gradient(rgba(var(--bg-color-red), var(--bg-color-green), var(--bg-color-blue), 0), 
+        rgba(var(--bg-color-red), var(--bg-color-green), var(--bg-color-blue), 1));
+}
+
+main {
+    /* Add a slightly transparent white background */
+    background: var(--main-bg-color);
+    margin-top: 600px;
+    position: relative;
+    width: 80%;
+
+    /* Position main element slightly inside the header element */
+    top: var(--main-top-offset);
+    left: 30%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+    padding: 60px;
+    border-radius: 15px;
+}
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+/* Add flex layout to website sections */
+.mata{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+.baleo{
+    display: flex;
+    flex-direction: column;
+}
+.section > h2 {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+}
+.section > p, .section > ul{
+    width: 65%;
+}
+.section > figure {
+    max-width: 30%;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    vertical-align: middle;
+    border-radius: 10px 10px 0 0;
+    /* Add border to images inside figures */
+    border: 5px solid var(--img-border-color);
+}
+figcaption {
+    padding: 3px;
+    text-align: center;
+    font-size: 0.7rem;
+    background: var(--img-border-color);
+    border-radius: 0px 0px 10px 10px;
+    color: var(--white-text-color);
+}
+/* Force all italic text in figcaptions to be inline */
+figcaption > .italic {
+    display: inline;
+    font-style: italic;
+}
+/* Remove underline from hyperlinks */
+figcaption > a {
+    text-decoration: none;
+}
+
+.photo-slideshow {
+    position: relative;
+    margin: 40px auto 0 auto;
+    width: 40%;
+}
+/* Remove bullet points from list */
+.photo-slideshow > ul {
+    list-style: none;
+}
+/* Don't display image slides by default */
+.slide {
+    margin: 0;
+    display: none;
+}
+/* Display slides that are active as block elements */
+.slide[data-active] {
+    display: block;
+}
+.slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* Position photo slideshow buttons with repsect to the photo-slideshow element */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: var(--white-text-color);
+    background: rgba(0, 0, 0, 0.4);
+    transition: 0.25s;
+    user-select: none;
+}
+.prev:hover, .next:hover {
+    color: var(--white-text-color);
+    background: rgba(0, 0, 0, 0.9);
+    transition: 0.25s;
+}
+.prev {
+    border-radius: 0 3px 3px 0;
+    left: 5px;
+}
+.next {
+    border-radius: 3px 0 0 3px;
+    right: 5px;
+}
+
+/* Animation for photo slideshow */
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+}
+@keyframes fade-in {
+    from {
+        opacity: 0.6;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Add bottom-margin to page as main is relatively positioned */
+#bottom-margin {
+    position: relative;
+    top: var(--main-top-offset);
+    height: var(--main-bottom-margin);
+}
+
+/* ------------------ MEDIA QUERIES ------------------ */
+/* Phone Screens (screen width <= 425px) */
+@media screen and (max-width: 425px) {
+    main {
+        width: 90%;
+        padding: 20px;
+    }
+    .section > p, .section > ul {
+        width: 100%;
+    }
+    .section > figure {
+        margin-top: 10px;
+        max-width: 100%;
+    }
+    .photo-slideshow {
+        width: 100%;
+    }
+    .prev, .next {
+        font-size: 1.5rem;
+    }
+}
+
+/* Tablet Screens (426px <= screen width <= 820px) */
+@media screen and (min-width: 426px) and (max-width: 820px) {
+    main {
+        padding: 30px;
+    }
+    .section > p, .section > ul {
+        width: 100%;
+    }
+    .section > figure {
+        margin: 20px auto 0 auto;
+        max-width: 80%;
+    }
+    .photo-slideshow {
+        width: 80%;
+    }
+    .prev, .next {
+        font-size: 2rem;
+    }
+}
+
+/* Smaller laptop screens (821px <= screen width <= 1024) */
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+    main {
+        padding: 40px;
+    }
+    .section > p, .section > ul {
+        width: 85%;
+    }
+    .section > figure {
+        margin: 20px auto 0 auto;
+        max-width: 60%;
+    }
+    .photo-slideshow {
+        width: 60%;
+    }
+}

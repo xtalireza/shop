@@ -8,15 +8,16 @@
     font-family: 'Vazirmatn', sans-serif;
 }
 body{
+    background-image: url(../assets/wp9649930\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
     direction: rtl;
     background-color: #ffffff;
-    font-family: B koodak;
-    background-image: url("../assets/IMG_20240129_212148_108.jpg");
+    /* background-image: url(../assets/background2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    font-family: 'Vazirmatn', sans-serif;
 }
 main{
     max-width: 1000px;
@@ -34,64 +35,7 @@ header img{
 }
 header h1{
     font-weight: 400;
-    font-family: B koodak;
-}
-.title{
-    font-family: B koodak;
-    color:#0E0D0D;
-    font-size: 40px
-}
-.regester{
-    display: flex;
-    align-items: center;
-    gap: 90px;
-}
-.btnsd{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    padding: 15px 30px;
-}
-.btn-3{
-    width: 100px;
-    height: 50px;
-    font-size: 20px;
-    color: white;
-    font-weight: 900;
-    font-family: B koodak;
-    border: 2px solid #397FFE;
-    background-color: #397FFE;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: 200ms all linear;
-}
-.btn-3:hover{
-    background-color: transparent;
-    color: #397FFE;
-}
-.searchinp{
-    outline: none;
-    padding: 10px 2px;
-    background-color: transparent;
-    border: none;
-    font-size: 20px;
-    font-family: B koodak;
-}
-.searchbox{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2px 20px;
-    background-color: #ffffff;
-    border-radius: 15px;
-}
-.sections a{
-    text-decoration: none;
-    list-style-type:  none;
-    color: #000000;
-    font-family: B koodak;
+    font-family: 'Vazirmatn', sans-serif;
 }
 .categorie{
     margin: 0 auto;
@@ -101,7 +45,11 @@ header h1{
     border-bottom: 2px solid rgb(0, 0, 0);
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
+    font-family: 'Vazirmatn', sans-serif;
 
+}
+.categorie li{
+    font-family: 'Vazirmatn', sans-serif;
 }
 .categorie ul{
     display: flex;
@@ -111,13 +59,13 @@ header h1{
     gap: 30px;
     font-size: 30px;
     color: rgb(0, 0, 0);
-    cursor: pointer;
+    font-family: 'Vazirmatn', sans-serif;
 }
 .categorie hr{
-    width: 2px;
+    width: 1px;
     height: 38px;
     border: none;
-    background-color: #397FFE;
+    background-color: black;
 }
 .box{
     margin-top: 30px;
@@ -130,22 +78,12 @@ header h1{
 .products{
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 250px;
     height: 350px;
     border-radius: 10px;
     border: 1px solid rgb(192, 192, 192);
     padding: 10px 25px;
-    backdrop-filter: blur(10px);
-    background-color: #ffffff59;
-}
-.products a{
-    color: white;
-    font-family: B koodak;
-}
-.btns button:hover{
-    color: red;
-    font-family: B koodak;
+    font-family: 'Vazirmatn', sans-serif;
 }
 .img-products{
     margin: 0 auto;
@@ -153,13 +91,7 @@ header h1{
     width: 100%;
     height: 70%;
     background-size: cover;
-    border-radius: 10px;
-}
-.products img{
-    border-radius: 15px;
-}
-a{
-    text-decoration: none;
+    border-radius: 3px;
 }
 .products h1{
     font-size: 30px;
@@ -174,6 +106,9 @@ a{
     font-family: 'Vazirmatn', sans-serif;
     justify-content: space-between;
 }
+.btns span{
+    font-family: 'Vazirmatn', sans-serif; 
+}
 .btns button{
     width:70px;
     height: 35px;
@@ -182,13 +117,15 @@ a{
     border: 1px solid red;
     background-color: red;
     color: white;
-    transition: 0.2s all linear;
+    transition: 0.5s all linear;
     font-family: 'Vazirmatn', sans-serif;
     cursor: pointer;
 }
 .btns button:hover{
     background-color: transparent;
-    color: red;
+    color: rgb(255, 0, 0);
+    transform: scale(105%);
+    transform: rotateX(360deg);
 }
 .buyform{
     margin-top: 50px;
@@ -251,6 +188,10 @@ a{
     color: red;
     transform: rotateX(360deg);
 }
+.buyc span{
+    font-size: 20px;
+    font-family: 'Vazirmatn', sans-serif;
+}
 .hrfooter{
     width: 100%;
     height: 3px;
@@ -289,8 +230,4 @@ footer{
 footer h1{
     color: rgb(199, 199, 199);
     cursor: pointer;
-}
-@font-face {
-    font-family: B koodak;
-    src: url(../font/B-Koodak-Fontjo.com/B-Koodak-Fontjo.com/B\ Koodak\ Bold.ttf);
 }

@@ -1,0 +1,13 @@
+body{ direction:center
+}
+
+			searchinp {direction:center;
+				width: 800px;
+				height: 40px;
+				background-color: transparent;
+				border: 4px solid #000000;
+				border-radius: 7px;
+				padding:15px;
+				color:white;
+				outline: none; 
+} 

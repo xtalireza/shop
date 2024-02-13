@@ -1,0 +1,7 @@
+ 
+ body {dir="rtl";
+ script type="text/javascript" ;
+window.confirm("خوش آمدید")
+</script>
+}
+ 
